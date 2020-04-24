@@ -65,6 +65,10 @@ body {
 }
 
 /* Our Cars */
+.car {
+  width: 100%;
+}
+
 .cars {
   text-transform: none;
   font-size: 35px;
@@ -200,7 +204,6 @@ h3 {
   color: #111;
 }
 
-/* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
   .bgimg-1,
   .bgimg-2,
@@ -287,7 +290,6 @@ h3 {
 .scorecard {
   font-family: Arial;
   margin: 0 auto; /* Center website */
-  max-width: 1300px; /* Max width */
   width: 100%;
   padding: 40px;
 
