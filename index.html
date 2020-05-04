@@ -12,20 +12,29 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <script src="wow.min.js"></script>
     <script>new WOW().init();</script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
-   
-    <title>Project Ed</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <title>Landing page</title>
   </head>
   <body>
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg font-weight-bold navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand btn btn-primary mr-3 font-weight-bold" href="#">Home</a>
+      <div class="neon_button font-weight-bold">
+        <a href="#" class="button">
+          <span class="button__line button__line--top"></span>
+          <span class="button__line button__line--right"></span>
+          <span class="button__line button__line--bottom"></span>
+          <span class="button__line button__line--left"></span>
+          Home
+        </a>
+      </div>
       <button
         class="navbar-toggler"
         type="button"
@@ -78,8 +87,13 @@
             </div>
           </li>
         </ul>
+        <a class="pr-3" href="#cars">Cars</a>
+        <a class="pr-3" href="#relax">Relax</a>
+        <a class="pr-3" href="#video">Video</a>
+        <a class="pr-3" href="#history">History</a>
+        <a class="mr-5 pr-5" href="#social">Social</a>
 
-        <!-- Open -->
+        <!-- My works -->
         <div class="new">
           <div id="myNav" class="overlay">
             <a  class="closebtn" onclick="closeNav()">&times;</a>
@@ -90,7 +104,7 @@
               <a href="https://eduard-mychka.github.io/active-box/" target="_blank">Active-Box</a>
             </div>
             </div>
-            <span class="btn btn-outline-info font-weight-bold" onclick="openNav()">Open</span>
+            <span class="btn btn-outline-info font-weight-bold ml-5 pl-2" onclick="openNav()">My works</span>
           </div>
           <script>
             function openNav() {
@@ -257,7 +271,6 @@
       </div>
     </div>
     
-    
     <!-- Modal Window Navbar -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
@@ -398,12 +411,11 @@
     </div>
 
     <!-- Our Cars -->
-    <div class="container-fluid car">
-      <div class="container mt-4 mb-5">
-        <div class="d-flex justify-content-center">
-          <h3 class="cars" style="padding: 10px; background: #f5da55">Our Cars</h3>
-        </div>
-        <div class="row justify-content-around">
+    <div class="container-fluid car mt-4 mb-4">
+      <div class="d-flex justify-content-center">
+        <h3 class="cars" id="cars" style="padding: 10px; background: #f5da55">Our Cars</h3>
+      </div>
+        <div class="row justify-content-center">
           <div class="card wow slideInLeft slower" data-wow-offset="200" style="width: 23rem; background-color: rgb(206, 206, 206);">
             <div class="flip-box-2">
               <div class="flip-box-inner-2">
@@ -448,10 +460,9 @@
             <div class="card-body">
               <h5 class="card-title font-weight-bold">AUDI RS4</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <div class="d-flex justify-content-center">
-                <a href="https://www.audi.com.au/au/web/en/models/rs/rs-4-avant.html" 
-                class="btn btn-primary font-weight-bold" target="_blank">Watch More</a>
-              </div>
+            <div class="d-flex justify-content-center">
+              <a href="https://www.audi.com.au/au/web/en/models/rs/rs-4-avant.html" 
+              class="btn btn-primary font-weight-bold" target="_blank">Watch More</a>
             </div>
           </div>
         </div>
@@ -459,7 +470,7 @@
     </div>
 
     <!--Carousel Video-->
-    <div class="video-fluid mb-3">
+    <div class="video-fluid mb-3" id="relax">
       <div class="d-flex justify-content-center">
         <h4 class="cars" style="padding: 10px; background: #f5da55">Relax with us</h4>
       </div>
@@ -735,7 +746,7 @@
     
   
     <!-- Video Youtube -->
-    <div class="container-fluid yuotube p-3 mb-3">
+    <div class="container-fluid yuotube p-3 mb-3" id="video">
       <div class="d-flex justify-content-center">
         <h4 class="cars" style="padding: 10px; background: #f5da55">Here you can watch the video</h4>
       </div>
@@ -768,7 +779,7 @@
     <!-- Accordion -->
     <div class="accordion" id="accordionExample">
       <div class="d-flex justify-content-center">
-      <h4 class="cars mt-3" style="padding: 10px; background: #f5da55">Look History</h4>
+      <h4 class="cars mt-3" id="history" style="padding: 10px; background: #f5da55">Look History</h4>
     </div>
       <div class="card wow fadeInLeft slower" data-wow-offset="100">
         <div class="card-header" id="headingOne">
@@ -784,7 +795,7 @@
             <div class="row">
               <div class="col">
                 
-                <img src="img/accordion/3.jpg" width="503" height="210" alt="">
+                <img src="img/accordion/3.jpg" width="454" height="210" alt="">
               </div>
 
               <div class="col-7">
@@ -813,7 +824,7 @@
             <div class="row">
               <div class="col">
                 
-                <img src="img/Paralaks/1.jpg" width="503" height="210" alt="">
+                <img src="img/Paralaks/1.jpg" width="454" height="210" alt="">
               </div>
 
               <div class="col-7">
@@ -842,7 +853,7 @@
             <div class="row">
               <div class="col">
                 
-                <img src="img/accordion/1.jpg" width="503" height="210" alt="">
+                <img src="img/accordion/1.jpg" width="454" height="210" alt="">
               </div>
 
               <div class="col-7">
@@ -938,14 +949,19 @@
           </div>
         </div>
         <!-- Footer -->
-        <footer class="page-footer font-small special-color-dark pt-4 badge-dark">
+        <footer class="page-footer font-small special-color-dark pt-3 badge-dark" id="social">
           <div class="container">
-    
-            <div class="row">
-              <div class="col mb-3">
-                <button type="button" class="btn btn-primary font-weight-bold" data-toggle="modal" data-target="#exampleModalRegistr">
-                  The Form
-                </button>
+            <div class="row d-flex">
+              <div class="col-3">
+                <div class="neon_button font-weight-bold" data-toggle="modal" data-target="#exampleModalRegistr">
+                  <div class="button">
+                    <span class="button__line button__line--top"></span>
+                    <span class="button__line button__line--right"></span>
+                    <span class="button__line button__line--bottom"></span>
+                    <span class="button__line button__line--left"></span>
+                    The Form
+                  </div>
+                </div>
                 <div class="modal fade" id="exampleModalRegistr" tabindex="-1" role="dialog" aria-labelledby="exampleModalRegistr" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content breadcrumb modalka">
@@ -959,7 +975,7 @@
                       <div class="modal-body">
                         <form id="regForm" action="" >
             
-                          <h1 class="cars text-dark mb-2">Fill out the form:</h1>
+                          <h1 class="text-dark mb-2">Fill out the form:</h1>
                           
                           <!-- One "tab" for each step in the form: -->
                           <div class="tab font-weight-bold text-muted">Name:
@@ -989,7 +1005,6 @@
                               <button class="btn btn-success font-weight-bold" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
                             </div>
                           </div>
-                          
                           <!-- Circles which indicates the steps of the form: -->
                           <div style="text-align:center;margin-top:40px;">
                             <span class="step"></span>
@@ -997,47 +1012,53 @@
                             <span class="step"></span>
                             <span class="step"></span>
                           </div>
-                          
                           </form>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-    
+
               <div class="col">
-                <ul class="list-unstyled list-inline text-center">
-                  <li class="list-inline-item icons">
-                    <a href="https://www.instagram.com/?hl=uk" target="_blank">
-                      <img src="./img/icons/instagram.svg" title="Instagram" width="25" height="25" alt="">
+                <div class="button-icons">
+                  <ul class="social-block">
+                    <a class="link" href="https://www.instagram.com/?hl=uk" target="_blank">
+                      <li class="social__item instagram">
+                        <i class="fa fa-instagram" title="Instagram"></i>
+                      </li>
                     </a>
-                  </li>
-                  <li class="list-inline-item icons">
-                    <a href="https://www.linkedin.com" target="_blank">
-                      <img src="./img/icons/linkedin.svg" title="Linkedin" width="25" height="25" alt="">
+                    <a class="link" href="https://www.linkedin.com" target="_blank">
+                      <li class="social__item linkedin">
+                        <i class="fa fa-linkedin" title="Linkedin"></i>
+                      </li>
                     </a>
-                  </li>
-                  <li class="list-inline-item icons">
-                    <a href="https://t.co/OHENmZOcdP?amp=1" target="_blank">
-                      <img src="./img/icons/telegram.svg" title="Telegram" width="25" height="25" alt="">
+                    <a class="link" href="https://twitter.com/explore" target="_blank">
+                      <li class="social__item twitter">
+                        <i class="fa fa-twitter" title="Twitter"></i>
+                      </li>
                     </a>
-                  </li>
-                  <li class="list-inline-item icons">
-                    <a href="https://github.com/Eduard-Mychka" target="_blank">
-                      <img src="./img/icons/github-image.svg" title="GitHub" width="25" height="25" alt="">
+                    <a class="link" href="https://www.youtube.com/" target="_blank">
+                      <li class="social__item youtube">
+                        <i class="fa fa-youtube" title="Youtube"></i>
+                      </li>
                     </a>
-                  </li>
-                  <li class="list-inline-item icons">
-                    <a href="https://www.youtube.com/" target="_blank">
-                      <img src="./img/icons/youtube.svg" title="Youtube" width="30" height="30" alt="">
+                    <a class="link" href="https://t.co/OHENmZOcdP?amp=1" target="_blank">
+                      <li class="social__item telegram">
+                        <i class="fa fa-telegram" title="Telegram"></i>
+                      </li>
                     </a>
-                  </li>
-                </ul>
+                    <a class="link" href="https://github.com/Eduard-Mychka" target="_blank">
+                      <li class="social__item github">
+                        <i class="fa fa-github" title="GitHub"></i>
+                      </li>
+                    </a>
+                  </ul>
+                </div>
               </div>
     
               <div class="col">
                 <div class="my-sm-n3">
-                <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                <div class="footer-copyright text-center pt-4">© 2020 Copyright:
                   <a class="font-weight-bold text-success" href="https://mdbootstrap.com/" target="_blank"> MDBootstrap.com</a>
                 </div>
               </div>

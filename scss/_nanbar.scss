@@ -1,0 +1,92 @@
+/* Carusel Navbar */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.name {
+  font-size: 60px;
+  color: rgb(0, 0, 0);
+  text-decoration: underline rgb(255, 0, 0);
+}
+
+.foto {
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgb(255, 255, 255);
+}
+
+.Developer {
+  letter-spacing: 8px;
+}
+
+.text {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 16px;
+}
+
+/* My works */
+.new {
+  font-family: "Lato", sans-serif;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #ff0000;
+  display: block;
+  transition: 0.3s;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #ffffff;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 30px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {
+    overflow-y: auto;
+  }
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}

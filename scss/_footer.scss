@@ -1,0 +1,207 @@
+/* Footer */
+.button-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-block {
+  color: white;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 240px;
+}
+
+.social__item {
+  width: 36px;
+  height: 36px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  transition: all 0.3s;
+}
+
+.instagram:hover {
+  border-color: #ff6a00;
+  box-shadow: 0 0 25px #ff6a00;
+  color: #ff6a00;
+}
+
+.linkedin:hover {
+  border-color: #7bff00;
+  box-shadow: 0 0 25px #7bff00;
+  color: #7bff00;
+}
+
+.twitter:hover {
+  border-color: #00aced;
+  box-shadow: 0 0 25px #00aced;
+  color: #00aced;
+}
+
+.youtube:hover {
+  border-color: #ff2600;
+  box-shadow: 0 0 25px #ff2600;
+  color: #ff2600;
+}
+
+.telegram:hover {
+  border-color: #00eaff;
+  box-shadow: 0 0 25px #00eaff;
+  color: #00eaff;
+}
+
+.github:hover {
+  border-color: #4dc247;
+  box-shadow: 0 0 25px #4dc247;
+  color: #4dc247;
+}
+
+.link {
+  color: rgb(255, 255, 255);
+  text-decoration-line: none;
+}
+
+.link:hover {
+  text-decoration-line: none;
+  color: rgb(255, 255, 255);
+}
+
+/* The Form */
+#regForm {
+  margin: 1px auto;
+  padding: 20px;
+  width: 100%;
+  min-width: 300px;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #a1a1a1;
+}
+
+input.invalid {
+  background-color: #ffdddd;
+}
+
+.tab {
+  display: none;
+}
+
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #8b8b8b;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+.step.finish {
+  background-color: #00ff08;
+}
+
+/* Neon Button */
+.neon_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+}
+
+.button {
+  cursor: pointer;
+  overflow: hidden;
+  padding: 5px 15px;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 2px;
+  position: relative;
+  color: #2196f3;
+  transition: 0.2s;
+}
+
+.button__line {
+  position: absolute;
+  display: block;
+}
+
+.button__line--top {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #2196f3);
+}
+
+.button:hover .button__line--top {
+  left: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+.button__line--bottom {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #2196f3);
+}
+
+.button:hover .button__line--bottom {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+.button__line--left {
+  bottom: -100%;
+  left: 0%;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(0deg, transparent, #2196f3);
+}
+
+.buttonb:hover .button__line--left {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0s;
+}
+
+.button__line--right {
+  top: -100%;
+  right: 0%;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #2196f3);
+}
+
+.button:hover .button__line--right {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0s;
+}
+
+.button:hover {
+  color: #000;
+  background-color: #2196f3;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+  transition-delay: 0.7s;
+}
