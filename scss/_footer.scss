@@ -15,9 +15,9 @@
 }
 
 .social__item {
-  width: 36px;
-  height: 36px;
-  border: 2px solid #fff;
+  width: 37px;
+  height: 37px;
+  border: 3px solid #fff;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -27,9 +27,9 @@
 }
 
 .instagram:hover {
-  border-color: #ff6a00;
-  box-shadow: 0 0 25px #ff6a00;
-  color: #ff6a00;
+  border-color: #cc00ff;
+  box-shadow: 0 0 25px #cc00ff;
+  color: #cc00ff;
 }
 
 .linkedin:hover {
@@ -57,9 +57,9 @@
 }
 
 .github:hover {
-  border-color: #4dc247;
-  box-shadow: 0 0 25px #4dc247;
-  color: #4dc247;
+  border-color: #ffbb00;
+  box-shadow: 0 0 25px #ffbb00;
+  color: #ffbb00;
 }
 
 .link {
@@ -68,8 +68,8 @@
 }
 
 .link:hover {
+  color: #fff;
   text-decoration-line: none;
-  color: rgb(255, 255, 255);
 }
 
 /* The Form */
