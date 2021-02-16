@@ -1,2 +1,2 @@
 # Landing page
-https://eduard-mychka.github.io/Landing-page/
+https://eduard-mychka.github.io/landing-page/
