@@ -1,2 +1,2 @@
 # Landing Page 2020 year 
-https://eduard-mychka.github.io/landing-page/
+(https://demos.eduard-mychka.github.io/landing-page/)
